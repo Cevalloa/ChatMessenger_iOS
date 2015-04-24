@@ -1,0 +1,221 @@
+{
+	"data" :
+	[
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Morbi efficitur mattis feugiat. Ut ornare turpis at quam elementum, non lobortis eros vestibulum."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Donec egestas non quam vitae ornare. Sed aliquet nisl in massa iaculis accumsan. Proin venenatis feugiat augue, eu rhoncus justo venenatis in."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Fusce at lorem quis mauris fringilla fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Mauris malesuada velit at massa blandit, ultrices scelerisque est consectetur. Donec a nunc at nulla aliquet vestibulum id quis nisl. Etiam tincidunt ullamcorper tellus id tincidunt."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Etiam tincidunt ullamcorper tellus id tincidunt."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Donec efficitur neque turpis, et ullamcorper leo dictum et. Aliquam luctus mauris mi, in dapibus nisl consequat ac. Suspendisse varius vel sem id sollicitudin. Morbi a massa eu dolor consequat commodo non et diam."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Mauris ultricies lacus a felis maximus, quis efficitur orci ullamcorper. Cras tempor ultrices nunc, sit amet aliquam neque consectetur in."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Vestibulum tempus semper diam, in eleifend libero. Aenean tellus sapien, pharetra quis euismod non, sodales a mi. Morbi libero ante, aliquet ut nunc sed, sollicitudin aliquet nulla."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Proin vitae augue sem. Fusce elementum leo id lorem vehicula imperdiet. Ut auctor dolor ex, vitae fringilla ante posuere luctus."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Curabitur nec maximus elit. Morbi pharetra, ligula in interdum iaculis, enim sapien lacinia nisl, vitae ultrices sem leo malesuada leo."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat. Proin blandit consectetur tortor ut accumsan. Morbi libero ante, aliquet ut nunc sed, sollicitudin aliquet nulla."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat. Proin blandit consectetur tortor ut accumsan."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Suspendisse luctus elementum placerat. In hac habitasse platea dictumst. Morbi et est semper, luctus odio sed, sagittis turpis. Mauris sit amet efficitur dui. Suspendisse ullamcorper sed mi ac facilisis. Vivamus sollicitudin velit risus, et lobortis magna imperdiet eu."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Morbi efficitur mattis feugiat. Ut ornare turpis at quam elementum, non lobortis eros vestibulum."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Donec egestas non quam vitae ornare. Sed aliquet nisl in massa iaculis accumsan. Proin venenatis feugiat augue, eu rhoncus justo venenatis in."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Fusce at lorem quis mauris fringilla fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Mauris malesuada velit at massa blandit, ultrices scelerisque est consectetur. Donec a nunc at nulla aliquet vestibulum id quis nisl. Etiam tincidunt ullamcorper tellus id tincidunt."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Etiam tincidunt ullamcorper tellus id tincidunt."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Donec efficitur neque turpis, et ullamcorper leo dictum et. Aliquam luctus mauris mi, in dapibus nisl consequat ac. Suspendisse varius vel sem id sollicitudin. Morbi a massa eu dolor consequat commodo non et diam."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Mauris ultricies lacus a felis maximus, quis efficitur orci ullamcorper. Cras tempor ultrices nunc, sit amet aliquam neque consectetur in."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Vestibulum tempus semper diam, in eleifend libero. Aenean tellus sapien, pharetra quis euismod non, sodales a mi. Morbi libero ante, aliquet ut nunc sed, sollicitudin aliquet nulla."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Proin vitae augue sem. Fusce elementum leo id lorem vehicula imperdiet. Ut auctor dolor ex, vitae fringilla ante posuere luctus."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Curabitur nec maximus elit. Morbi pharetra, ligula in interdum iaculis, enim sapien lacinia nisl, vitae ultrices sem leo malesuada leo."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat. Proin blandit consectetur tortor ut accumsan. Morbi libero ante, aliquet ut nunc sed, sollicitudin aliquet nulla."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat."
+		},
+		{
+			"user_id" : "2",
+			"username" : "JennyBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_female.png",
+			"message" : "Nulla sodales, felis eu ultrices consequat, erat mauris eleifend massa, ac aliquam ligula odio eu erat. Proin blandit consectetur tortor ut accumsan."
+		},
+		{
+			"user_id" : "1",
+			"username" : "LukeBoise",
+			"avatar" : "http://dev.apppartner.com/AppPartnerProgrammerTest/images/icon_avatar_male.png",
+			"message" : "Suspendisse luctus elementum placerat. In hac habitasse platea dictumst. Morbi et est semper, luctus odio sed, sagittis turpis. Mauris sit amet efficitur dui. Suspendisse ullamcorper sed mi ac facilisis. Vivamus sollicitudin velit risus, et lobortis magna imperdiet eu."
+		}
+	]
+}
