@@ -24,8 +24,6 @@
     MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
 
     self.navController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
-    
-    [self.navController setNavigationBarHidden:NO];
     self.window.rootViewController = self.navController;
 
     return YES;

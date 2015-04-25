@@ -13,6 +13,16 @@
 		4434B5C11A3FBB7100687081 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4434B5C01A3FBB7100687081 /* Images.xcassets */; };
 		4434B5C41A3FBB7100687081 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4434B5C21A3FBB7100687081 /* LaunchScreen.xib */; };
 		4434B5D01A3FBB7100687081 /* IOSProgrammerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4434B5CF1A3FBB7100687081 /* IOSProgrammerTestTests.m */; };
+		CC6EED291AEBEF980084BCA4 /* Jelloween - Machinato Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED1F1AEBEF860084BCA4 /* Jelloween - Machinato Bold Italic.ttf */; };
+		CC6EED2A1AEBEF980084BCA4 /* Jelloween - Machinato Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED201AEBEF860084BCA4 /* Jelloween - Machinato Bold.ttf */; };
+		CC6EED2B1AEBEF980084BCA4 /* Jelloween - Machinato ExtraLight Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED211AEBEF860084BCA4 /* Jelloween - Machinato ExtraLight Italic.ttf */; };
+		CC6EED2C1AEBEF980084BCA4 /* Jelloween - Machinato ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED221AEBEF870084BCA4 /* Jelloween - Machinato ExtraLight.ttf */; };
+		CC6EED2D1AEBEF980084BCA4 /* Jelloween - Machinato Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED231AEBEF870084BCA4 /* Jelloween - Machinato Italic.ttf */; };
+		CC6EED2E1AEBEF980084BCA4 /* Jelloween - Machinato Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED241AEBEF870084BCA4 /* Jelloween - Machinato Light Italic.ttf */; };
+		CC6EED2F1AEBEF980084BCA4 /* Jelloween - Machinato Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED251AEBEF870084BCA4 /* Jelloween - Machinato Light.ttf */; };
+		CC6EED301AEBEF980084BCA4 /* Jelloween - Machinato SemiBold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED261AEBEF870084BCA4 /* Jelloween - Machinato SemiBold Italic.ttf */; };
+		CC6EED311AEBEF980084BCA4 /* Jelloween - Machinato SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED271AEBEF870084BCA4 /* Jelloween - Machinato SemiBold.ttf */; };
+		CC6EED321AEBEF980084BCA4 /* Jelloween - Machinato.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED281AEBEF870084BCA4 /* Jelloween - Machinato.ttf */; };
 		DC932C181A40A50A000035B7 /* AnimationSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC932C071A40A50A000035B7 /* AnimationSectionViewController.m */; };
 		DC932C191A40A50A000035B7 /* AnimationSectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC932C081A40A50A000035B7 /* AnimationSectionViewController.xib */; };
 		DC932C1A1A40A50A000035B7 /* LoginSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC932C0B1A40A50A000035B7 /* LoginSectionViewController.m */; };
@@ -49,6 +59,16 @@
 		4434B5C91A3FBB7100687081 /* IOSProgrammerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSProgrammerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4434B5CE1A3FBB7100687081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4434B5CF1A3FBB7100687081 /* IOSProgrammerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSProgrammerTestTests.m; sourceTree = "<group>"; };
+		CC6EED1F1AEBEF860084BCA4 /* Jelloween - Machinato Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato Bold Italic.ttf"; sourceTree = "<group>"; };
+		CC6EED201AEBEF860084BCA4 /* Jelloween - Machinato Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato Bold.ttf"; sourceTree = "<group>"; };
+		CC6EED211AEBEF860084BCA4 /* Jelloween - Machinato ExtraLight Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato ExtraLight Italic.ttf"; sourceTree = "<group>"; };
+		CC6EED221AEBEF870084BCA4 /* Jelloween - Machinato ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato ExtraLight.ttf"; sourceTree = "<group>"; };
+		CC6EED231AEBEF870084BCA4 /* Jelloween - Machinato Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato Italic.ttf"; sourceTree = "<group>"; };
+		CC6EED241AEBEF870084BCA4 /* Jelloween - Machinato Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato Light Italic.ttf"; sourceTree = "<group>"; };
+		CC6EED251AEBEF870084BCA4 /* Jelloween - Machinato Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato Light.ttf"; sourceTree = "<group>"; };
+		CC6EED261AEBEF870084BCA4 /* Jelloween - Machinato SemiBold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato SemiBold Italic.ttf"; sourceTree = "<group>"; };
+		CC6EED271AEBEF870084BCA4 /* Jelloween - Machinato SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato SemiBold.ttf"; sourceTree = "<group>"; };
+		CC6EED281AEBEF870084BCA4 /* Jelloween - Machinato.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato.ttf"; sourceTree = "<group>"; };
 		DC932C061A40A50A000035B7 /* AnimationSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSectionViewController.h; sourceTree = "<group>"; };
 		DC932C071A40A50A000035B7 /* AnimationSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSectionViewController.m; sourceTree = "<group>"; };
 		DC932C081A40A50A000035B7 /* AnimationSectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationSectionViewController.xib; sourceTree = "<group>"; };
@@ -106,6 +126,7 @@
 		4434B5B21A3FBB7100687081 /* IOSProgrammerTest */ = {
 			isa = PBXGroup;
 			children = (
+				CC6EED1E1AEBEF790084BCA4 /* Resources */,
 				DC932C0D1A40A50A000035B7 /* Main Menu */,
 				DC932C051A40A50A000035B7 /* Animation Section */,
 				DC932C091A40A50A000035B7 /* Login Section */,
@@ -143,6 +164,23 @@
 				4434B5CE1A3FBB7100687081 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC6EED1E1AEBEF790084BCA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC6EED1F1AEBEF860084BCA4 /* Jelloween - Machinato Bold Italic.ttf */,
+				CC6EED201AEBEF860084BCA4 /* Jelloween - Machinato Bold.ttf */,
+				CC6EED211AEBEF860084BCA4 /* Jelloween - Machinato ExtraLight Italic.ttf */,
+				CC6EED221AEBEF870084BCA4 /* Jelloween - Machinato ExtraLight.ttf */,
+				CC6EED231AEBEF870084BCA4 /* Jelloween - Machinato Italic.ttf */,
+				CC6EED241AEBEF870084BCA4 /* Jelloween - Machinato Light Italic.ttf */,
+				CC6EED251AEBEF870084BCA4 /* Jelloween - Machinato Light.ttf */,
+				CC6EED261AEBEF870084BCA4 /* Jelloween - Machinato SemiBold Italic.ttf */,
+				CC6EED271AEBEF870084BCA4 /* Jelloween - Machinato SemiBold.ttf */,
+				CC6EED281AEBEF870084BCA4 /* Jelloween - Machinato.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		DC932C051A40A50A000035B7 /* Animation Section */ = {
@@ -281,13 +319,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC6EED301AEBEF980084BCA4 /* Jelloween - Machinato SemiBold Italic.ttf in Resources */,
+				CC6EED2E1AEBEF980084BCA4 /* Jelloween - Machinato Light Italic.ttf in Resources */,
 				4434B5C41A3FBB7100687081 /* LaunchScreen.xib in Resources */,
+				CC6EED2D1AEBEF980084BCA4 /* Jelloween - Machinato Italic.ttf in Resources */,
+				CC6EED2F1AEBEF980084BCA4 /* Jelloween - Machinato Light.ttf in Resources */,
 				DC932C211A40A50A000035B7 /* ChatSectionViewController.xib in Resources */,
 				DC932C191A40A50A000035B7 /* AnimationSectionViewController.xib in Resources */,
 				DC932C1F1A40A50A000035B7 /* ChatCell.xib in Resources */,
 				4434B5C11A3FBB7100687081 /* Images.xcassets in Resources */,
 				DC932C1D1A40A50A000035B7 /* MainMenuViewController.xib in Resources */,
+				CC6EED291AEBEF980084BCA4 /* Jelloween - Machinato Bold Italic.ttf in Resources */,
+				CC6EED2A1AEBEF980084BCA4 /* Jelloween - Machinato Bold.ttf in Resources */,
 				DC932C1B1A40A50A000035B7 /* LoginSectionViewController.xib in Resources */,
+				CC6EED321AEBEF980084BCA4 /* Jelloween - Machinato.ttf in Resources */,
+				CC6EED311AEBEF980084BCA4 /* Jelloween - Machinato SemiBold.ttf in Resources */,
+				CC6EED2B1AEBEF980084BCA4 /* Jelloween - Machinato ExtraLight Italic.ttf in Resources */,
+				CC6EED2C1AEBEF980084BCA4 /* Jelloween - Machinato ExtraLight.ttf in Resources */,
 				DC932C3C1A41FDC9000035B7 /* chatData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

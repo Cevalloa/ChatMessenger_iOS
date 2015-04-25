@@ -12,6 +12,7 @@
 #import "AnimationSectionViewController.h"
 
 @interface MainMenuViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *textLabelHeader;
 
 @end
 
@@ -21,6 +22,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
+
+    [self.textLabelHeader setFont:[UIFont fontWithName:@"Machinato-Bold" size:22]];
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning

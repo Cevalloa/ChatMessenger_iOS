@@ -24,7 +24,14 @@
     [super viewDidLoad];
     
     self.loadedChatData = [[NSMutableArray alloc] init];
+
     [self loadJSONData];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    [self.navigationController setNavigationBarHidden:NO];
+
 }
 
 - (void)loadJSONData
