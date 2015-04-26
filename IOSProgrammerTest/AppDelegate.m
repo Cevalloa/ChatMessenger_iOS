@@ -24,6 +24,10 @@
     MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
 
     self.navController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
+    
+    self.navController.navigationBar.barTintColor = [UIColor blackColor];
+    self.navController.navigationBar.tintColor = [UIColor whiteColor];
+    
     self.window.rootViewController = self.navController;
 
     return YES;

@@ -23,18 +23,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    for (NSString* family in [UIFont familyNames])
-    {
-        NSLog(@"%@", family);
-        
-        for (NSString* name in [UIFont fontNamesForFamilyName: family])
-        {
-            NSLog(@"  %@", name);
-        }
-    }
+
 
     [self.textLabelHeader setFont:[UIFont fontWithName:@"Machinato-Bold" size:22]];
     
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
@@ -52,6 +45,7 @@
 {
     ChatSectionViewController *tableSectionViewController = [[ChatSectionViewController alloc] init];
     [self.navigationController pushViewController:tableSectionViewController animated:YES];
+
 }
 - (IBAction)apiSectionAction:(id)sender
 {

@@ -16,21 +16,21 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="215" translatesAutoresizingMaskIntoConstraints="NO" id="n92-Oq-3Q8">
-                        <rect key="frame" x="97" y="21" width="215" height="21"/>
+                        <rect key="frame" x="73" y="21" width="239" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-3J-aei">
-                        <rect key="frame" x="8" y="8" width="84" height="59"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UPV-3J-aei">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
                         <color key="backgroundColor" red="1" green="0.232607702" blue="0.2917400899" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="84" id="Yau-Zl-4Tc"/>
-                            <constraint firstAttribute="height" constant="59" id="sxM-P0-EEz"/>
+                            <constraint firstAttribute="width" constant="50" id="Yau-Zl-4Tc"/>
+                            <constraint firstAttribute="height" constant="50" id="sxM-P0-EEz"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="215" translatesAutoresizingMaskIntoConstraints="NO" id="5Fq-iO-25c">
-                        <rect key="frame" x="97" y="47" width="215" height="21"/>
+                        <rect key="frame" x="73" y="47" width="239" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -44,13 +44,13 @@
                     <constraint firstItem="5Fq-iO-25c" firstAttribute="top" secondItem="n92-Oq-3Q8" secondAttribute="bottom" constant="5" id="Ed1-XK-DCe"/>
                     <constraint firstItem="5Fq-iO-25c" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Fjt-ia-Dbo"/>
                     <constraint firstItem="UPV-3J-aei" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HZT-qv-IAd"/>
-                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="leading" secondItem="UPV-3J-aei" secondAttribute="trailing" constant="5" id="I66-nY-C3a"/>
+                    <constraint firstItem="n92-Oq-3Q8" firstAttribute="leading" secondItem="UPV-3J-aei" secondAttribute="trailing" constant="15" id="I66-nY-C3a"/>
                     <constraint firstItem="UPV-3J-aei" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="TNA-wq-o3o"/>
                     <constraint firstItem="5Fq-iO-25c" firstAttribute="top" secondItem="n92-Oq-3Q8" secondAttribute="bottom" id="UQ4-FD-2ZH"/>
                     <constraint firstItem="n92-Oq-3Q8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="UbB-zi-SJ6"/>
                     <constraint firstAttribute="centerY" secondItem="5Fq-iO-25c" secondAttribute="centerY" constant="-10" id="XkQ-Ww-DQZ"/>
                     <constraint firstItem="5Fq-iO-25c" firstAttribute="leading" secondItem="UPV-3J-aei" secondAttribute="trailing" constant="5" id="jZL-eJ-a2l"/>
-                    <constraint firstItem="5Fq-iO-25c" firstAttribute="leading" secondItem="UPV-3J-aei" secondAttribute="trailing" constant="5" id="msL-IG-XnC"/>
+                    <constraint firstItem="5Fq-iO-25c" firstAttribute="leading" secondItem="UPV-3J-aei" secondAttribute="trailing" constant="15" id="msL-IG-XnC"/>
                     <constraint firstAttribute="trailingMargin" secondItem="n92-Oq-3Q8" secondAttribute="trailing" id="zeX-HY-JwX"/>
                 </constraints>
                 <variation key="default">

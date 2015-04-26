@@ -12,8 +12,16 @@
 @interface NetworkConnectivityClass : NSObject
 
 
+
+#pragma mark ChatSectionViewController network methods
 -(void)methodReturnTableViewMessages:(void(^) (NSMutableArray *))completion;
 
 -(void)methodReturnImage:(NSString *)stringImageUrl completion:(void(^) (UIImage *))completion;
+
+-(NSURLSessionTaskState)methodCheckIfSessionIsRunning;
+
+-(void)methodCancelNetworkRequest;
+
+
 
 @end

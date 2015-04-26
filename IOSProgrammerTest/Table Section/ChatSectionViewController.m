@@ -11,6 +11,7 @@
 #import "ChatCell.h"
 #import "NetworkConnectivityClass.h"
 
+//removed table cell height for a more dynamic approach
 #define TABLE_CELL_HEIGHT 45.0f
 
 
@@ -21,11 +22,18 @@
 
 @implementation ChatSectionViewController
 
+#pragma mark - View Controller Lifecycle Methods
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.loadedChatData = [[NSMutableArray alloc] init];
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Machinato-Bold" size:21], NSFontAttributeName, [UIColor whiteColor], NSForegroundColorAttributeName, nil]];
+    
+    self.title = @"CHAT";
+
+
     
     NetworkConnectivityClass *networkConnectivityClassInstance = [NetworkConnectivityClass new];
     
@@ -36,8 +44,7 @@
         weakVersionOfSelf.loadedChatData = returnedArrayWithMessages;
         [weakVersionOfSelf.tableView reloadData];
     }];
-    
-    self.navigationController.navigationBar.translucent = NO;
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -51,11 +58,6 @@
 {
 
     
-}
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)backAction:(id)sender
@@ -96,4 +98,15 @@
     ChatData *cc = self.loadedChatData[indexPath.row];
     return [ChatCell heightForMessageCell:cc];
 }
+
+-(void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    //Access cell's modal property to see if it is running
+    if( [((ChatCell *)cell).networkConnectivityClassInstance methodCheckIfSessionIsRunning] == NSURLSessionTaskStateRunning){
+        
+        [((ChatCell *)cell).networkConnectivityClassInstance methodCancelNetworkRequest];
+
+    }
+}
+
 @end

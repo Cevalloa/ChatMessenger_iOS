@@ -11,12 +11,14 @@
 
 @interface NetworkConnectivityClass()
 
+@property (nonatomic) NSURLSessionDownloadTask *sessionDownloadTask;
 
 @end
 
 
 @implementation NetworkConnectivityClass
 
+#pragma mark ChatSectionViewController network methods
 -(void)methodReturnTableViewMessages:(void (^)(NSMutableArray *))completion{
     
     dispatch_queue_t queueForJSON = dispatch_queue_create("queueForJSON", NULL);
@@ -57,12 +59,41 @@
     });
 }
 
--(void)methodReturnTableViewMessages:(NSString *)stringImageUrl completion:(void (^)(NSMutableArray *))completion{
+-(void)methodReturnImage:(NSString *)stringImageUrl completion:(void (^)(UIImage *))completion{
     
     if (stringImageUrl == nil){
         return;
     }
     
+    NSURL *url = [[NSURL alloc] initWithString:stringImageUrl];
+    
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    
+    self.sessionDownloadTask = [session downloadTaskWithRequest:request completionHandler:^(NSURL *location, NSURLResponse *response, NSError *error) {
+        NSData *data = [[NSData alloc] initWithContentsOfURL:location];
+        UIImage *image = [[UIImage alloc] initWithData:data];
+        
+        //Go back to main thread.. tell them we have what we need
+        dispatch_async(dispatch_get_main_queue(), ^{
+            completion(image);
+        });
+    }];
+    
+    [self.sessionDownloadTask resume];
+    
 }
+
+-(NSURLSessionTaskState)methodCheckIfSessionIsRunning{
+    return [self.sessionDownloadTask state];
+}
+
+//Used for when the cell is removed from the screen
+-(void)methodCancelNetworkRequest{
+    [self.sessionDownloadTask cancel];
+}
+
+
 
 @end
