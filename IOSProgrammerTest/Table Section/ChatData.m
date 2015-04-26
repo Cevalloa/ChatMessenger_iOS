@@ -15,5 +15,7 @@
     self.username = [dict objectForKey:@"username"];
     self.avatar_url = [dict objectForKey:@"avatar_url"];
     self.message = [dict objectForKey:@"message"];
+    
+    
 }
 @end

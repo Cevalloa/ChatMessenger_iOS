@@ -23,15 +23,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    for (NSString* family in [UIFont familyNames])
-//    {
-//        NSLog(@"%@", family);
-//        
-//        for (NSString* name in [UIFont fontNamesForFamilyName: family])
-//        {
-//            NSLog(@"  %@", name);
-//        }
-//    }
+    for (NSString* family in [UIFont familyNames])
+    {
+        NSLog(@"%@", family);
+        
+        for (NSString* name in [UIFont fontNamesForFamilyName: family])
+        {
+            NSLog(@"  %@", name);
+        }
+    }
 
     [self.textLabelHeader setFont:[UIFont fontWithName:@"Machinato-Bold" size:22]];
     

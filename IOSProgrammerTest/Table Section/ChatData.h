@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ChatData : NSObject
 @property (nonatomic, readwrite) int user_id;
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSString *avatar_url;
 @property (nonatomic, strong) NSString *message;
+@property (nonatomic) UIImage *imageOfMessage;
+
+
 - (void)loadWithDictionary:(NSDictionary *)dict;
 @end

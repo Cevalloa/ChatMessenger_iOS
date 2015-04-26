@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NetworkConnectivityClass : NSObject
 
+
 -(void)methodReturnTableViewMessages:(void(^) (NSMutableArray *))completion;
+
+-(void)methodReturnImage:(NSString *)stringImageUrl completion:(void(^) (UIImage *))completion;
 
 @end

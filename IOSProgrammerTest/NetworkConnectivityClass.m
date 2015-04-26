@@ -57,4 +57,12 @@
     });
 }
 
+-(void)methodReturnTableViewMessages:(NSString *)stringImageUrl completion:(void (^)(NSMutableArray *))completion{
+    
+    if (stringImageUrl == nil){
+        return;
+    }
+    
+}
+
 @end

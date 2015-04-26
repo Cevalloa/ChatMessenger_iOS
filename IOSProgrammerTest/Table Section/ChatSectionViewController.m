@@ -29,9 +29,12 @@
     
     NetworkConnectivityClass *networkConnectivityClassInstance = [NetworkConnectivityClass new];
     
+    //Weak self for block
+    __weak ChatSectionViewController *weakVersionOfSelf = self;
+    
     [networkConnectivityClassInstance methodReturnTableViewMessages:^(NSMutableArray *returnedArrayWithMessages) {
-        self.loadedChatData = returnedArrayWithMessages;
-        [self.tableView reloadData];
+        weakVersionOfSelf.loadedChatData = returnedArrayWithMessages;
+        [weakVersionOfSelf.tableView reloadData];
     }];
     
     self.navigationController.navigationBar.translucent = NO;
@@ -90,6 +93,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70.0f;
+    ChatData *cc = self.loadedChatData[indexPath.row];
+    return [ChatCell heightForMessageCell:cc];
 }
 @end
