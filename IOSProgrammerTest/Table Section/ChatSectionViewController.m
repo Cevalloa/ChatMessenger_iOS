@@ -9,8 +9,10 @@
 #import "ChatSectionViewController.h"
 #import "MainMenuViewController.h"
 #import "ChatCell.h"
+#import "NetworkConnectivityClass.h"
 
 #define TABLE_CELL_HEIGHT 45.0f
+
 
 @interface ChatSectionViewController ()
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
@@ -24,8 +26,15 @@
     [super viewDidLoad];
     
     self.loadedChatData = [[NSMutableArray alloc] init];
-
-    [self loadJSONData];
+    
+    NetworkConnectivityClass *networkConnectivityClassInstance = [NetworkConnectivityClass new];
+    
+    [networkConnectivityClassInstance methodReturnTableViewMessages:^(NSMutableArray *returnedArrayWithMessages) {
+        self.loadedChatData = returnedArrayWithMessages;
+        [self.tableView reloadData];
+    }];
+    
+    self.navigationController.navigationBar.translucent = NO;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -34,34 +43,11 @@
 
 }
 
+//Removed this method to the modal layer.. was called in viewDidLoad
 - (void)loadJSONData
 {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"chatData" ofType:@"json"];
 
-    NSError *error = nil;
-
-    NSData *rawData = [NSData dataWithContentsOfFile:filePath options:NSDataReadingMappedIfSafe error:&error];
-
-    id JSONData = [NSJSONSerialization JSONObjectWithData:rawData options:NSJSONReadingAllowFragments error:&error];
-
-    [self.loadedChatData removeAllObjects];
-    if ([JSONData isKindOfClass:[NSDictionary class]])
-    {
-        NSDictionary *jsonDict = (NSDictionary *)JSONData;
-
-        NSArray *loadedArray = [jsonDict objectForKey:@"data"];
-        if ([loadedArray isKindOfClass:[NSArray class]])
-        {
-            for (NSDictionary *chatDict in loadedArray)
-            {
-                ChatData *chatData = [[ChatData alloc] init];
-                [chatData loadWithDictionary:chatDict];
-                [self.loadedChatData addObject:chatData];
-            }
-        }
-    }
-
-    [self.tableView reloadData];
+    
 }
 - (void)didReceiveMemoryWarning
 {
@@ -104,6 +90,6 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return TABLE_CELL_HEIGHT;
+    return 70.0f;
 }
 @end
