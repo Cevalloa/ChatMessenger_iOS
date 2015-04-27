@@ -9,6 +9,7 @@
 #import "LoginSectionViewController.h"
 #import "MainMenuViewController.h"
 #import "UIViewController+NavigationBarHelperMethods.h"
+#import "NetworkConnectivityClass.h"
 
 @interface LoginSectionViewController ()
 
@@ -72,7 +73,12 @@
 #pragma mark - IBAction Methods
 - (IBAction)methodActionLogin:(id)sender {
     
+    NetworkConnectivityClass *networkInstance = [NetworkConnectivityClass new];
     
+    [networkInstance methodLogin:@"http://dev.apppartner.com/AppPartnerProgrammerTest/scripts/login.php" withUserName:nil withPassword:nil completion:^(NSDictionary *hi) {
+        NSLog(@"complete... %@", hi);
+    }
+     ];
     
 }
 

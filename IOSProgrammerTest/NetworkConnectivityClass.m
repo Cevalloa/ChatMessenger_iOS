@@ -18,7 +18,7 @@
 
 @implementation NetworkConnectivityClass
 
-#pragma mark ChatSectionViewController network methods
+#pragma mark Table Section network methods
 -(void)methodReturnTableViewMessages:(void (^)(NSMutableArray *))completion{
     
     dispatch_queue_t queueForJSON = dispatch_queue_create("queueForJSON", NULL);
@@ -93,6 +93,46 @@
 -(void)methodCancelNetworkRequest{
     [self.sessionDownloadTask cancel];
 }
+
+#pragma mark - Login Section Network Methods
+-(void)methodLogin:(NSString *)stringToLogin withUserName:(NSString *)stringUsername withPassword:(NSString *)stringPassword completion:(void(^)(NSDictionary *))completion{
+    
+    NSURL *urlToLogIn = [NSURL URLWithString:stringToLogin];
+    
+    NSURLSession *defaultSession = [NSURLSession sharedSession];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:urlToLogIn];
+    
+    //Creating the parameter
+    NSString *params = @"username=SuperBoise&password=qwerty";
+    
+    //Set http to POST
+    [request setHTTPMethod:@"POST"];
+    
+    //Add parameter to body (usint NSUTF8String since that is what this web server asks for)
+    [request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSURLSessionDataTask *task = [defaultSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        
+        NSLog(@"Response.. %@", response);
+        NSLog(@"Error.. %@", error);
+        
+        if (error == nil){
+            dispatch_async(dispatch_get_main_queue(), ^{
+                NSDictionary *returnedData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+                NSLog(@"data.. %@", returnedData);
+                completion(returnedData);
+
+            });
+        }
+        
+    }];
+    
+    [task resume];
+    
+}
+
+
 
 
 

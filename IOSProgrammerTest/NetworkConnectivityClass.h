@@ -22,6 +22,8 @@
 
 -(void)methodCancelNetworkRequest;
 
+-(void)methodLogin:(NSString *)stringToLogin withUserName:(NSString *)stringUsername withPassword:(NSString *)stringPassword completion:(void(^)(NSDictionary *))completion;
+
 
 
 @end
