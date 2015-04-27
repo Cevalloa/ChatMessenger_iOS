@@ -3,10 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginSectionViewController">
             <connections>
+                <outlet property="textFieldPassword" destination="dAQ-mS-zAd" id="FV7-PF-VOS"/>
+                <outlet property="textFieldUsername" destination="emB-z3-WWx" id="zjO-i2-YUL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +21,54 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_login" translatesAutoresizingMaskIntoConstraints="NO" id="NKr-WY-9On">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dAQ-mS-zAd">
+                    <rect key="frame" x="33" y="232" width="254" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="EXm-mY-h6J"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="emB-z3-WWx">
+                    <rect key="frame" x="33" y="172" width="254" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="iie-8r-flv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-tV-KHF">
+                    <rect key="frame" x="40" y="427" width="241" height="53"/>
+                    <state key="normal" image="btn_login">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="methodActionLogin:" destination="-1" eventType="touchUpInside" id="4Yx-Av-Pmc"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="dAQ-mS-zAd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="25" id="BGu-xx-flv"/>
+                <constraint firstItem="dAQ-mS-zAd" firstAttribute="width" secondItem="emB-z3-WWx" secondAttribute="width" id="JNB-PR-5G1"/>
+                <constraint firstItem="dAQ-mS-zAd" firstAttribute="top" secondItem="emB-z3-WWx" secondAttribute="bottom" constant="15" id="Kxh-m3-6Zo"/>
+                <constraint firstItem="emB-z3-WWx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" constant="25" id="Ldk-Zl-YzR"/>
                 <constraint firstAttribute="bottom" secondItem="NKr-WY-9On" secondAttribute="bottom" id="NyB-gS-YhK"/>
                 <constraint firstItem="NKr-WY-9On" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="V6A-Xs-IzB"/>
+                <constraint firstAttribute="centerX" secondItem="dAQ-mS-zAd" secondAttribute="centerX" id="XBx-4P-nB4"/>
+                <constraint firstAttribute="trailingMargin" secondItem="emB-z3-WWx" secondAttribute="trailing" constant="25" id="YMJ-iU-GR4"/>
+                <constraint firstAttribute="centerX" secondItem="qYc-tV-KHF" secondAttribute="centerX" id="b1W-IG-GU9"/>
+                <constraint firstAttribute="trailingMargin" secondItem="dAQ-mS-zAd" secondAttribute="trailing" constant="25" id="cjW-GI-2CS"/>
+                <constraint firstAttribute="centerY" secondItem="dAQ-mS-zAd" secondAttribute="centerY" constant="30" id="fTo-Da-HEf"/>
                 <constraint firstItem="NKr-WY-9On" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gvy-FM-p6L"/>
                 <constraint firstAttribute="trailing" secondItem="NKr-WY-9On" secondAttribute="trailing" id="oaV-R5-Fjh"/>
+                <constraint firstAttribute="bottomMargin" secondItem="qYc-tV-KHF" secondAttribute="bottom" constant="80" id="ps4-Mc-8Us"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
         <image name="bg_login" width="320" height="568"/>
+        <image name="btn_login" width="241" height="53"/>
     </resources>
 </document>
