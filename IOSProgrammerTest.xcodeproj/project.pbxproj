@@ -24,6 +24,7 @@
 		CC6EED311AEBEF980084BCA4 /* Jelloween - Machinato SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED271AEBEF870084BCA4 /* Jelloween - Machinato SemiBold.ttf */; };
 		CC6EED321AEBEF980084BCA4 /* Jelloween - Machinato.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC6EED281AEBEF870084BCA4 /* Jelloween - Machinato.ttf */; };
 		CC6EED361AEC66A50084BCA4 /* NetworkConnectivityClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6EED351AEC66A50084BCA4 /* NetworkConnectivityClass.m */; };
+		CC6EED391AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = CC6EED381AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.m */; };
 		DC932C181A40A50A000035B7 /* AnimationSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC932C071A40A50A000035B7 /* AnimationSectionViewController.m */; };
 		DC932C191A40A50A000035B7 /* AnimationSectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC932C081A40A50A000035B7 /* AnimationSectionViewController.xib */; };
 		DC932C1A1A40A50A000035B7 /* LoginSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC932C0B1A40A50A000035B7 /* LoginSectionViewController.m */; };
@@ -72,6 +73,8 @@
 		CC6EED281AEBEF870084BCA4 /* Jelloween - Machinato.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jelloween - Machinato.ttf"; sourceTree = "<group>"; };
 		CC6EED341AEC66A50084BCA4 /* NetworkConnectivityClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConnectivityClass.h; sourceTree = "<group>"; };
 		CC6EED351AEC66A50084BCA4 /* NetworkConnectivityClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConnectivityClass.m; sourceTree = "<group>"; };
+		CC6EED371AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationBarHelperMethods.h"; sourceTree = "<group>"; };
+		CC6EED381AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBarHelperMethods.m"; sourceTree = "<group>"; };
 		DC932C061A40A50A000035B7 /* AnimationSectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationSectionViewController.h; sourceTree = "<group>"; };
 		DC932C071A40A50A000035B7 /* AnimationSectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationSectionViewController.m; sourceTree = "<group>"; };
 		DC932C081A40A50A000035B7 /* AnimationSectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationSectionViewController.xib; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				4434B5C21A3FBB7100687081 /* LaunchScreen.xib */,
 				4434B5C01A3FBB7100687081 /* Images.xcassets */,
 				4434B5B31A3FBB7100687081 /* Supporting Files */,
+				CC6EED371AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.h */,
+				CC6EED381AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.m */,
 			);
 			path = IOSProgrammerTest;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				CC6EED361AEC66A50084BCA4 /* NetworkConnectivityClass.m in Sources */,
 				DC932C1C1A40A50A000035B7 /* MainMenuViewController.m in Sources */,
 				442EA5E71A44A6ED00CEB3CB /* ChatData.m in Sources */,
+				CC6EED391AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

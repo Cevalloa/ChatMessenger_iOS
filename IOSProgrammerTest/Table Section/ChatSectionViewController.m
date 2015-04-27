@@ -29,8 +29,6 @@
     
     self.loadedChatData = [[NSMutableArray alloc] init];
     
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIFont fontWithName:@"Machinato-Bold" size:21], NSFontAttributeName, [UIColor whiteColor], NSForegroundColorAttributeName, nil]];
-    
     self.title = @"CHAT";
 
 
@@ -60,10 +58,10 @@
     
 }
 
+//Removed thsi method.. navigationcontroller takes care of this
 - (IBAction)backAction:(id)sender
 {
-    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
-    [self.navigationController pushViewController:mainMenuViewController animated:YES];
+
 }
 
 #pragma mark - UITableViewDataSource

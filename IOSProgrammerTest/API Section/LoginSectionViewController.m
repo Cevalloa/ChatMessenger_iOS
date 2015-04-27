@@ -8,6 +8,7 @@
 
 #import "LoginSectionViewController.h"
 #import "MainMenuViewController.h"
+#import "UIViewController+NavigationBarHelperMethods.h"
 
 @interface LoginSectionViewController ()
 
@@ -19,18 +20,21 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"LOGIN";
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:YES];
+    
+    //Sets the navigation bar transparant
+    [self methodNavigationBarSetTransparant];
+
 }
 
+//Method deleted.. navigation controller takes care of this
 - (IBAction)backAction:(id)sender
 {
-    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc] init];
-    [self.navigationController pushViewController:mainMenuViewController animated:YES];
 }
 
 @end

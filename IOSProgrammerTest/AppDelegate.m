@@ -25,8 +25,7 @@
 
     self.navController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
     
-    self.navController.navigationBar.barTintColor = [UIColor blackColor];
-    self.navController.navigationBar.tintColor = [UIColor whiteColor];
+
     
     self.window.rootViewController = self.navController;
 

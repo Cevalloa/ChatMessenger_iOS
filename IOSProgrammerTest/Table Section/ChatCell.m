@@ -62,6 +62,7 @@
     self.imageViewAvatar.image = nil;
     self.imageViewAvatar.layer.cornerRadius = 25;
     self.imageViewAvatar.layer.masksToBounds = YES;
+   // self.imageViewAvatar.layer.rasterizationScale = [UIScreen mainScreen].scale;
     
     if (chatData.imageOfMessage){
         self.imageViewAvatar.image = chatData.imageOfMessage;

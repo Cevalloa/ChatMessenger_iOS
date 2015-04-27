@@ -10,6 +10,7 @@
 #import "ChatSectionViewController.h"
 #import "LoginSectionViewController.h"
 #import "AnimationSectionViewController.h"
+#import "UIViewController+NavigationBarHelperMethods.h"
 
 @interface MainMenuViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *textLabelHeader;
@@ -18,20 +19,28 @@
 
 @implementation MainMenuViewController
 
+#pragma mark - ViewController lifecycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-
-
+    //Sets the main text label font
     [self.textLabelHeader setFont:[UIFont fontWithName:@"Machinato-Bold" size:22]];
     
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    //Sets up title(font & color), sets navigation back button to empty
+    [self methodNavigationBarSetMainFont];
+    
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
-    [self.navigationController setNavigationBarHidden:YES];
+
+    //Hides the navigation bar
+    [self methodNavigationBarHide];
+    
+    //Resets the navigation bar colors
+    [self methodNavigationBarResetColors];
+    
     
 }
 
