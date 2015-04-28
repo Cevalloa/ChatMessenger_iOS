@@ -70,13 +70,36 @@
     return false;
 }
 
+#pragma mark UIAlertView Methods
+//Since we are targeting iOS 7 as well, we can't use UIAlertController
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    //If buttonIndex with 'OK' is pressed, brings us back to mainviewcontroller
+    if (buttonIndex == 0){
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
+    
+    
+}
+
+
 #pragma mark - IBAction Methods
 - (IBAction)methodActionLogin:(id)sender {
     
     NetworkConnectivityClass *networkInstance = [NetworkConnectivityClass new];
     
-    [networkInstance methodLogin:@"http://dev.apppartner.com/AppPartnerProgrammerTest/scripts/login.php" withUserName:nil withPassword:nil completion:^(NSDictionary *hi) {
-        NSLog(@"complete... %@", hi);
+    NSDate *dateTimeStart = [NSDate date];
+    
+    [networkInstance methodLogin:@"http://dev.apppartner.com/AppPartnerProgrammerTest/scripts/login.php" withUserName:self.textFieldUsername.text withPassword:self.textFieldPassword.text completion:^(NSDictionary *returnedValue) {
+
+        //Show message & find out how much time the process took in miliseconds
+        NSString *stringToDisplayInAlertView = [NSString stringWithFormat:@"%@ .. took %f milliseconds", returnedValue[@"message"], ([[NSDate date] timeIntervalSinceDate:dateTimeStart] * 1000.0f)];
+        
+        //Create alertView to display returned Data
+        UIAlertView *alertViewForReturnedData = [[UIAlertView alloc] initWithTitle:returnedValue[@"code"] message:stringToDisplayInAlertView delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        
+        [alertViewForReturnedData show];
+        
     }
      ];
     

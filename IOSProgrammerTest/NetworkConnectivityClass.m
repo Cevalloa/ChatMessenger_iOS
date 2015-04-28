@@ -104,13 +104,15 @@
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:urlToLogIn];
     
     //Creating the parameter
-    NSString *params = @"username=SuperBoise&password=qwerty";
+    NSString *stringParameter = [NSString stringWithFormat:@"username=%@&password=%@", stringUsername, stringPassword];    
+    //Test to see the only login that works
+    //NSString *stringParameter = @"username=SuperBoise&password=qwerty";
     
     //Set http to POST
     [request setHTTPMethod:@"POST"];
     
     //Add parameter to body (usint NSUTF8String since that is what this web server asks for)
-    [request setHTTPBody:[params dataUsingEncoding:NSUTF8StringEncoding]];
+    [request setHTTPBody:[stringParameter dataUsingEncoding:NSUTF8StringEncoding]];
     
     NSURLSessionDataTask *task = [defaultSession dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         
