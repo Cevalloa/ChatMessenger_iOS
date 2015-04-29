@@ -22,6 +22,7 @@
 
 -(void)methodCancelNetworkRequest;
 
+#pragma mark - Login Section Network Methods
 -(void)methodLogin:(NSString *)stringToLogin withUserName:(NSString *)stringUsername withPassword:(NSString *)stringPassword completion:(void(^)(NSDictionary *))completion;
 
 

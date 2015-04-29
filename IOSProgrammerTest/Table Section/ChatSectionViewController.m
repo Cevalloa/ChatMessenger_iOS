@@ -43,6 +43,10 @@
         [weakVersionOfSelf.tableView reloadData];
     }];
 
+    //Because we are using XIB files, we should register the NIB first
+    [self.tableView registerNib:[UINib nibWithNibName:@"ChatCell" bundle:nil] forCellReuseIdentifier:@"ChatCell"];
+
+
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -56,17 +60,22 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *cellIdentifier = @"ChatCell";
-    ChatCell *cell = nil;
+    
+
+    ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    //Previous code.. if statement would run everytime
+    //ChatCell *cell = nil
 
     if (cell == nil)
     {
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil];
-        cell = (ChatCell *)[nib objectAtIndex:0];
+//        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:cellIdentifier owner:self options:nil];
+//        cell = (ChatCell *)[nib objectAtIndex:0];
+        cell = [[ChatCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
 
-    ChatData *chatData = [self.loadedChatData objectAtIndex:[indexPath row]];
-
-    [cell loadWithData:chatData];
+    //Load in the chat data into the cell
+    [cell loadWithData:[self.loadedChatData objectAtIndex:[indexPath row]]];
 
     return cell;
 }
@@ -102,7 +111,7 @@
     
 }
 
-//Removed thsi method.. navigationcontroller takes care of this
+//Removed this method.. navigationcontroller takes care of this
 - (IBAction)backAction:(id)sender
 {
     
