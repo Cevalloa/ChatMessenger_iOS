@@ -25,7 +25,7 @@
 
     self.navController = [[UINavigationController alloc] initWithRootViewController:mainMenuViewController];
     
-
+    //Status bar declared hidden in plist file
     
     self.window.rootViewController = self.navController;
 

@@ -51,19 +51,6 @@
 
 }
 
-//Removed this method to the modal layer.. was called in viewDidLoad
-- (void)loadJSONData
-{
-
-    
-}
-
-//Removed thsi method.. navigationcontroller takes care of this
-- (IBAction)backAction:(id)sender
-{
-
-}
-
 #pragma mark - UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +92,20 @@
         [((ChatCell *)cell).networkConnectivityClassInstance methodCancelNetworkRequest];
 
     }
+}
+
+#pragma mark - Removed Methods
+//Removed this method to the modal layer.. was called in viewDidLoad
+- (void)loadJSONData
+{
+    
+    
+}
+
+//Removed thsi method.. navigationcontroller takes care of this
+- (IBAction)backAction:(id)sender
+{
+    
 }
 
 @end

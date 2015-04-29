@@ -132,8 +132,8 @@
 		4434B5B21A3FBB7100687081 /* IOSProgrammerTest */ = {
 			isa = PBXGroup;
 			children = (
+				CC6EED3A1AF0085E0084BCA4 /* Categories */,
 				CC6EED331AEC5CDF0084BCA4 /* Modal / Network Layer */,
-				CC6EED1E1AEBEF790084BCA4 /* Resources */,
 				DC932C0D1A40A50A000035B7 /* Main Menu */,
 				DC932C051A40A50A000035B7 /* Animation Section */,
 				DC932C091A40A50A000035B7 /* Login Section */,
@@ -142,9 +142,8 @@
 				4434B5B81A3FBB7100687081 /* AppDelegate.m */,
 				4434B5C21A3FBB7100687081 /* LaunchScreen.xib */,
 				4434B5C01A3FBB7100687081 /* Images.xcassets */,
+				CC6EED1E1AEBEF790084BCA4 /* Resources */,
 				4434B5B31A3FBB7100687081 /* Supporting Files */,
-				CC6EED371AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.h */,
-				CC6EED381AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.m */,
 			);
 			path = IOSProgrammerTest;
 			sourceTree = "<group>";
@@ -199,6 +198,15 @@
 				CC6EED351AEC66A50084BCA4 /* NetworkConnectivityClass.m */,
 			);
 			name = "Modal / Network Layer";
+			sourceTree = "<group>";
+		};
+		CC6EED3A1AF0085E0084BCA4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CC6EED371AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.h */,
+				CC6EED381AEDADF90084BCA4 /* UIViewController+NavigationBarHelperMethods.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		DC932C051A40A50A000035B7 /* Animation Section */ = {
